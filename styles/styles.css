@@ -19,6 +19,10 @@ h1 {
     font-family: "Copperplate Gothic Light", fantasy;
     font-weight: 400;
 }
+h3 {
+    font-family: "Copperplate Gothic Light", fantasy;
+    font-weight: 400;
+}
 
 a {
     text-decoration: none;
@@ -43,6 +47,11 @@ img {
 
 /* !header */
 
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
 .logo img {
     max-width: 130px;
 }
@@ -52,7 +61,8 @@ img {
 }
 
 .main-nav {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
     justify-content: space-around;
     align-items: center;
 }
@@ -61,8 +71,6 @@ img {
 
 .hamburger {
     display: none;
-    font-size: 2.2rem;
-    margin-right: 40px;
 }
 
 .hamburger a {
@@ -73,6 +81,9 @@ img {
     opacity: .6;
 }
 
+.hamburger i {
+}
+
 .menu ul {
     display: flex;
     justify-content: center;
@@ -80,7 +91,7 @@ img {
 }
 
 .menu li {
-    width: 90px;
+    width: 95px;
 }
 
 .menu a {
@@ -92,7 +103,6 @@ img {
     font-size: 1.4rem;
     color: var(--primary);
     white-space: nowrap;
-    padding: 2px 5px;
 }
 
 .menu a:hover {
@@ -140,8 +150,24 @@ img {
     .hamburger {
         display: block;
     }
-    .menu {
+    .hamburger a {
+        margin-left: 55px;
+    }
+    .hamburger i {
+        font-size: 2.5rem;
+    }
+    .hamburger a:hover {
+        background: var(--yellow);
+        border: var(--yellow);
+        color: var(--primary);
+    }
+    .menu ul{
         display: none;
+    }
+    
+    .search-bar input {
+        min-width: 180px;
+        margin-left: 100px;
     }
 }
 
@@ -152,7 +178,9 @@ img {
 
 .browse-new-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin-top: 40px;
 }
 
@@ -163,6 +191,9 @@ img {
     padding: 7px;
 }
 
+.browse-new-container h3 {
+    padding: 20px 0;
+}
 /* games carousell */
 
 main {
@@ -188,7 +219,14 @@ main {
 
 .grid-container img {
     /* max-width: 100%; */
-    height: 250px;
+    max-height: 250px;
     margin: 25px 25px;
 }
 
+@media (max-width: 537px){
+    .grid-container img {
+        max-width: 100%;
+        height: 200px;
+        margin: 25px 20px;
+    }
+}
