@@ -9,10 +9,13 @@
 
 html {
     font-size: 10px;
+    height: 100%;
 }
 
 body {
     font-family: tahoma;
+    overflow-x: hidden;
+    height: 100%;
 }
 
 h1 {
@@ -41,10 +44,11 @@ img {
 :root{
     --primary: #1C243C;
     --yellow: #E8E11C;
-    --red: #5E0101;
+    --red: linear-gradient(180deg, rgba(94,1,1,1) 9%, rgba(44,0,0,1) 100%); /* #5E0101 */
     --grey: #8A8A9C;
     --border: #40C2D3;
     --incon-size: 1.4rem;
+    --bg-color: linear-gradient(180deg, rgba(28,36,60,1) 9%, rgba(111,111,132,1) 100%);
 } 
 
 /* !header */
@@ -67,6 +71,7 @@ img {
 .logo {
     display: flex;
     justify-content: center;
+    margin-left: 30px;
 }
 
 /* search bar */
@@ -151,5 +156,172 @@ img {
     }
     .search-bar input {
         width: 70%;
+    }
+}
+
+/* !main */
+
+main {
+    background: var(--bg-color);
+    padding: 20px 0;
+}
+
+main div{
+    padding: 10px;
+}
+
+/* buttons */
+
+.browse-new {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.browse-new a {
+    background: var(--red);
+    color: var(--yellow);
+    border: 2px solid var(--yellow);
+    width: 270px;
+    padding: 5px;
+    text-align: center;
+    margin: 0 0 15px 0;
+}
+
+.browse-new a:hover {
+    opacity: .8;
+}
+
+.browse-new h3 {
+    color: var(--yellow);
+}
+
+/* games container */
+
+.games-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1300px;
+    margin: auto;
+    background-size: cover;
+}
+
+/* todo resize all images */
+.games-container a img {
+    max-width: 200px;
+    width: 100%;
+}
+
+.games-container a {
+    margin: 0 15px;
+}
+
+.fa-angle-left {
+    font-size: 4rem;
+    margin-left: 10px;
+    color: #fff;
+    width: 20px;
+}
+
+.fa-angle-left:hover {
+    font-size: 5rem;
+}
+
+
+.fa-angle-right {
+    font-size: 4rem;
+    margin-right: 10px;
+    color: #fff;
+    width: 20px;
+}
+
+.fa-angle-right:hover {
+    font-size: 5rem;
+}
+
+@media (max-width: 800px){
+    .games-container a:nth-child(5) {
+        display: none;
+    }
+}
+@media (max-width: 670px){
+    .games-container a:nth-child(4) {
+        display: none;
+    }
+}
+
+/* !footer */
+
+footer {
+    padding: 20px;
+    background: var(--grey);
+}
+
+footer .container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    max-width: 1300px;
+    width: 95%;
+    margin: auto;
+}
+
+footer p, span {
+    font-size: 1.3rem;
+    line-height: 3rem;
+    color: #fff;
+}
+
+footer span {
+    font-weight: bold;
+}
+
+footer a {
+    text-decoration: underline;
+    color: var(--primary);
+}
+
+footer a:hover {
+    opacity: .6;
+}
+
+/* social media */
+
+.social-media {
+    text-align: center;
+}
+
+.social-media a {
+    font-size: 2rem;
+    margin: 30px 10px;
+}
+
+/* news-letter */
+
+.news-letter p {
+    margin-bottom : 30px;
+}
+
+.news-letter input {
+    height: 25px;
+}
+
+.news-letter input[type="text"] {
+    max-width: 220px;
+    width: 78%;
+    outline: none;
+}
+
+@media (max-width: 800px){
+    footer .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    footer .container > div {
+        padding: 20px;
     }
 }
