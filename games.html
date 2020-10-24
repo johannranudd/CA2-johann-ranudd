@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games - Game Hub</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="logo">
+            <a href="index.html"><img src="img/GameHub_Logo.png" alt="Game Hub Logo"></a>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+            <a href="#"><i class="fas fa-search"></i></a>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="sell.html"><i class="fas fa-shopping-bag"></i>Buy & Sell</a></li>
+                <li><a href="#" class="active"><i class="fas fa-gamepad"></i>Games</a></li>
+                <li><a href="account.html"><i class="fas fa-user-circle"></i>Account</a></li>
+                <li><a href="checkout.html"><i class="fas fa-shopping-cart"></i>Checkout</a></li>
+            </ul>
+            <div id="hamburger">
+                <a href="#"><i class="fas fa-bars"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- main content -->
+
+    <main>
+        <section class="section-1-buy-and-sell">
+            <ul>
+                <li><a href="#">Your store<i class="fas fa-angle-down"></i></a></li>
+                <li><a href="#">Browse<i class="fas fa-angle-down"></i></a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Offers</a></li>
+                <li><input type="text" placeholder="Search the store"><button id="section-1-search-btn" type="submit"><i
+                            class="fas fa-search"></i></button></li>
+            </ul>
+        </section>
+
+        <section class="section-2-buy-and-sell">
+            <a href="#">
+                <h1 id="increased-size-games">Buy</h1>
+            </a>
+            <a href="#">
+                <h1>Sell</h1>
+            </a>
+        </section>
+
+        <section class="featured">
+            <a href="#" id="buy-and-sell-active">Featured</a>
+        </section>
+
+        <section class="grid-container-games">
+            <a href="#"><img src="./img/hitman.jpg" alt=""></a>
+            <a href="#"><img src="./img/battlefield-5.jpg" alt=""></a>
+            <a href="#"><img src="./img/cyberpunk2.jpg" alt=""></a>
+            <a href="#"><img src="./img/valhalla2.jpg" alt=""></a>
+
+            <!-- add more photos/products when needed -->
+            
+            <a href="#"><img src="./img/battlefield-5.jpg" alt=""></a>
+            <a href="#"><img src="./img/cyberpunk2.jpg" alt=""></a>
+            <a href="#"><img src="./img/valhalla2.jpg" alt=""></a>
+            <a href="#"><img src="./img/hitman.jpg" alt=""></a>
+            <a href="#"><img src="./img/battlefield-5.jpg" alt=""></a>
+            <a href="#"><img src="./img/cyberpunk2.jpg" alt=""></a>
+        </section>
+    </main>
+
+        <!-- footer -->
+
+        <footer>
+            <div class="container">
+                <div class="contact-us">
+                    <div class="footer-contact-info">
+                        <p><span>Contact us</span></p>
+                        <p>Email: <a href="mailto:gamehub@contact.com">gamehub@contact.com</a></p>
+                            <p>Phone: 836 59 442</p>
+                            <p><a href="#" class="contact-page-link">Contact Page</a></p>
+                    </div>
+                </div>
+                <div class="social-media">
+                    <p><span>Check us out on</span></p>
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="news-letter">
+                    <p><span>Subscribe for newsletter and offers</span></p>
+                    <form action="mailto:gamehub@contact.com"></form>
+                    <input type="text" placeholder="Your Email.." name="email">
+                    <input type="submit" value="Submit">
+                </div>
+            </div>
+        </footer>
+</body>
+</html>

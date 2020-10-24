@@ -7,13 +7,13 @@
         integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>test - Game Hub</title>
+    <title>Sell - Game Hub</title>
 </head>
 
 <body>
     <header class="main-header">
         <div class="logo">
-            <img src="img/GameHub_Logo.png" alt="Game Hub Logo">
+            <a href="index.html"><img src="img/GameHub_Logo.png" alt="Game Hub Logo"></a>
         </div>
         <div class="search-bar">
             <input type="text" placeholder="Search">
@@ -21,7 +21,7 @@
         </div>
         <div class="menu">
             <ul>
-                <li><a href="sell.html"><i class="fas fa-shopping-bag"></i>Buy & Sell</a></li>
+                <li><a href="#" class="active"><i class="fas fa-shopping-bag"></i>Buy & Sell</a></li>
                 <li><a href="games.html"><i class="fas fa-gamepad"></i>Games</a></li>
                 <li><a href="account.html"><i class="fas fa-user-circle"></i>Account</a></li>
                 <li><a href="checkout.html"><i class="fas fa-shopping-cart"></i>Checkout</a></li>
@@ -31,40 +31,50 @@
             </div>
         </div>
     </header>
-    <!-- main -->
+
+    <!-- main content -->
+
     <main>
-        <!-- new games -->
-        <div class="browse-new">
+        <section class="section-1-buy-and-sell">
+            <ul>
+                <li><a href="#">Your store<i class="fas fa-angle-down"></i></a></li>
+                <li><a href="#">Browse<i class="fas fa-angle-down"></i></a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Offers</a></li>
+                <li><input type="text" placeholder="Search the store"><button id="section-1-search-btn" type="submit"><i
+                            class="fas fa-search"></i></button></li>
+            </ul>
+        </section>
+
+        <section class="section-2-buy-and-sell">
             <a href="#">
-                <h1>BROWSE NEW GAMES</h1>
+                <h1>Buy</h1>
             </a>
-            <h3>FEATURED GAMES</h3>
-        </div>
-        <div class="games-container">
-            <a href="#"><i class="fas fa-angle-left"></i></a>
-            <a href="#"><img src="./img/hitman.jpg" alt="hitman cover"></a>
-            <a href="#"><img src="./img/cyberpunk2.jpg" alt="Cyberpunk cover"></a>
-            <a href="#"><img src="./img/battlefield-5.jpg" alt="Battlefield-V"></a>
-            <a href="#"><img src="./img/valhalla2.jpg" alt="Assassin's creed"></a>
-            <a href="#"><i class="fas fa-angle-right"></i></a>
-        </div>
-        <!-- buy and sell -->
-        <div class="browse-new">
             <a href="#">
-                <h1>BUY AND SELL</h1>
+                <h1 id="increased-size">Sell</h1>
             </a>
-            <h3>FEATURED GAMES</h3>
-        </div>
-        <div class="games-container">
-            <a href="#"><i class="fas fa-angle-left"></i></a>
-            <a href="#"><img src="./img/battlefield-5.jpg" alt="Battlefield-V"></a>
-            <a href="#"><img src="./img/valhalla2.jpg" alt="Assassin's creed"></a>
-            <a href="#"><img src="./img/hitman.jpg" alt="hitman cover"></a>
-            <a href="#"><img src="./img/cyberpunk2.jpg" alt="Cyberpunk cover"></a>
-            <a href="#"><i class="fas fa-angle-right"></i></a>
-        </div>
+        </section>
+        <section class="section-3-buy-and-sell">
+            <a href="#" id="buy-and-sell-active">Add Product</a>
+            <a href="#">Your Store</a>
+            <a href="#">Community</a>
+        </section>
+        <form action="#" class="buy-and-sell-form">
+            <div class="form-container">
+                <div>
+                    <a href="#">Add Photo</a>
+                </div>
+                    <div class="flex-text-area">
+                    <textarea name="product-description" id="product-description" cols="40" rows="15"
+                        placeholder="Add a description"></textarea>
+                    <input type="submit" value="Submit">
+                </div>
+            </div>
+        </form>
     </main>
+
     <!-- footer -->
+
     <footer>
         <div class="container">
             <div class="contact-us">
@@ -89,6 +99,7 @@
             </div>
         </div>
     </footer>
+
 </body>
 
 </html>
