@@ -32,7 +32,6 @@ a {
     display: inline-block;
     color: var(--primary);
 }
-
 ul {
     list-style-type: none;
 }
@@ -577,4 +576,325 @@ footer a:hover {
     max-width: 200px;
 }
 
+/* !SEARCH PAGE */
+
+/* bread crumbs */
+.bread-crums {
+    color: #fff;
+    padding: 0;
+    margin-left: 10px;
+}
+
+/* search header */
+.search-header {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 3% 0px 3%;
+}
+
+.search-header h1 {
+    color: var(--yellow);
+}
+
+/* search result */
+
+.search-result {
+    width: 90%;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.search-result .container {
+    display: grid;
+    grid-template-columns: 23% 23% 8% 23% 23%;
+    align-items: center;
+    justify-items: center;
+    padding: 20px 0;
+}
+
+.game-image {
+    padding: 0;
+}
+
+/* cards */
+
+.game-info-card {
+    height: 100%;
+    width: 80%;
+    border: 2px solid var(--yellow);
+    border-radius: 15px;
+    background: #1C243C;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.vertical-line {
+    border-left: 1px solid #fff;
+    height: 100%;
+}
+
+/* inside game-info-card */
+
+.game-info-card-icons {
+    display: flex;
+    justify-content: space-between;
+    padding: .5vw 1vw;
+}
+.game-info-card-icons a:hover {
+    opacity: .8;
+}
+/* game name */
+.game-name {
+    color: var(--yellow);
+    text-align: center;
+    font-size: 1.3rem;
+}
+/* button */
+.add-to-cart-btn {
+    display: flex;
+    justify-content: center;
+}
+.add-to-cart-btn button {
+    cursor: pointer;
+    color: var(--yellow);  
+    background: var(--red);
+    height: 30px;
+    width: 100px;
+    border: 1px solid var(--yellow);
+    border-radius: 15px;
+}
+.add-to-cart-btn button:hover {
+    opacity: .8;
+}
+/* rating paragraph */
+.rating-paragraph {
+    text-align: center;
+    color: var(--yellow);
+    padding-bottom: 0;
+    font-size: 1.2rem;
+}
+/* stars */
+
+.rating-stars {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px 25px 10px;
+}
+
+.rating-stars li {
+    color: var(--yellow);
+    font-size: 1.2rem;
+}
+
+/* ubisoft icon */
+.iconify {
+    color: yellow;
+    font-size: 2vw;
+}
+
+.game-info-card-icons a {
+    font-size: 1.5vw;
+    color: var(--yellow);
+}
+.buy-used-headline{
+    display: none;
+}
+/* !MEDIA QUERIES */
+
+
+@media (max-width: 701px) {
+
+    /* search header */
+    .search-header {
+        text-align: center;
+    }
+    .search-header h1:last-child {
+        display: none;
+    }
+    .vertical-line {
+        display: none !important;
+    }
+    .search-result .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .search-result .container>div {
+        margin: 20px 0px;
+    }
+    /* image */
+
+   
+    /* card */
+    .game-info-card {
+        height: 300px;
+        width: 265px;
+    }
+    /* icons */
+    .game-info-card-icons {
+        width: 100%;
+    }
+    .game-info-card-icons a{
+        font-size: 1.6rem;
+        padding: 5px 15px;
+    }
+    .iconify {
+        font-size: 2rem;
+        margin-top: 0;
+    }
+    .buy-used-headline {
+        display: block;
+        color: var(--yellow);
+        font-size: 1.4rem;
+        padding: 20px 0 0 0;
+    }
+    .rating-stars {
+        padding: 0 50px 25px 50px;
+    }
+}
+
+/* !suggested games */
+
+.suggested-products {
+    width: 100%;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.suggested-products h3 {
+    color: var(--yellow);
+    padding: 50px 0px;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.suggested-products .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(208px, 1fr));
+    justify-items: center;
+    grid-gap: 20px;
+    padding: 0px 25px;
+}
+
+.suggested-products .container div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 70%;
+}
+
+.suggested-products .container div p {
+    margin-bottom: 30px;
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.suggested-products .container img {
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+/* !SING IN PAGE */
+
+/* enter details */
+
+.sign-in-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    width: 70%;
+    max-width: 1300px;
+    margin: 10px auto 80px;
+}
+
+.sign-in-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.sign-in-form h1 {
+    font-size: 2.2rem;
+    color: var(--yellow);
+    padding: 20px 0;
+}
+
+.sign-in-form label {
+    padding: 20px 0;
+    font-size: var(--incon-size);
+    color: var(--yellow);
+    margin-top: 20px;
+}
+
+.sign-in-form div {
+    padding: 0;
+}
+
+#checkbox-label {
+    color: #fff;
+}
+
+#checkbox-div {
+    padding: 30px 0;
+}
+
+.sing-in-submit-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sign-in-form input[type="text"], 
+input[type="password"] {
+    height: 30px;
+    width: 280px;
+    outline: none;
+}
+
+.sign-in-form input[type="submit"] {
+    cursor: pointer;
+    height: 30px;
+    width: 90px;
+    font-size: 1.2rem;
+    background: var(--red);
+    border: 1.5px solid var(--yellow);
+    color: var(--yellow);
+}
+
+/* why join game hub */
+
+
+
+.sign-in-aside h3{
+    color: var(--yellow);
+    padding: 20px 0;
+    font-size: 1.4rem;
+}
+
+.sign-in-aside ul{
+    list-style-type: inherit;
+    margin-left: 12px;
+}
+
+.sign-in-aside li {
+    line-height: 3.9rem;
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+@media (max-width: 800px) {
+    .sign-in-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .sign-in-aside {
+        margin-top: 50px;
+    }
+}
 

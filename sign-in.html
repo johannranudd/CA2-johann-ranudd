@@ -7,7 +7,9 @@
         integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sell - Game Hub</title>
+    <!-- inconify -->
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <title>Sign In - Game Hub</title>
 </head>
 
 <body>
@@ -21,9 +23,9 @@
         </div>
         <div class="menu">
             <ul>
-                <li><a href="#" class="active"><i class="fas fa-shopping-bag"></i>Buy & Sell</a></li>
+                <li><a href="sell.html"><i class="fas fa-shopping-bag"></i>Buy & Sell</a></li>
                 <li><a href="games.html"><i class="fas fa-gamepad"></i>Games</a></li>
-                <li><a href="account.html"><i class="fas fa-user-circle"></i>Account</a></li>
+                <li><a href="#" class="active"><i class="fas fa-user-circle"></i>Account</a></li>
                 <li><a href="checkout.html"><i class="fas fa-shopping-cart"></i>Checkout</a></li>
             </ul>
             <div id="hamburger">
@@ -31,50 +33,41 @@
             </div>
         </div>
     </header>
-
-    <!-- main content -->
-
+    <!-- main -->
     <main>
-        <section class="section-1-buy-and-sell">
-            <ul>
-                <li><a href="#">Your store<i class="fas fa-angle-down"></i></a></li>
-                <li><a href="#">Browse<i class="fas fa-angle-down"></i></a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Offers</a></li>
-                <li><input type="text" placeholder="Search the store"><button id="section-1-search-btn" type="submit"><i
-                            class="fas fa-search"></i></button></li>
-            </ul>
-        </section>
+        <section class="sign-in-container">
+            <!-- form -->
+            <form action="/account.html" class="sign-in-form">
+                <h1>sign in</h1>
+                <label for="username">Username or Email address</label>
+                <input type="text" id="username" name="username" value="" placeholder="Username or Email address"><br>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" value="" placeholder="Password">
 
-        <section class="section-2-buy-and-sell">
-            <a href="games.html">
-                <h1>Buy</h1>
-            </a>
-            <a href="#">
-                <h1 id="increased-size">Sell</h1>
-            </a>
-        </section>
-        <section class="section-3-buy-and-sell">
-            <a href="#" id="buy-and-sell-active">Add Product</a>
-            <a href="#">Your Store</a>
-            <a href="#">Community</a>
-        </section>
-        <form action="#" class="buy-and-sell-form">
-            <div class="form-container">
-                <div>
-                    <a href="#">Add Photo</a>
+
+                <div id="checkbox-div">
+                    <input type="checkbox" id="checkbox" name="not-a-robot" value="">
+                    <label for="not-a-robot" id="checkbox-label">I'm not a robot</label>
                 </div>
-                    <div class="flex-text-area">
-                    <textarea name="product-description" id="product-description" cols="40" rows="15"
-                        placeholder="Add a description"></textarea>
+
+                <div class="sing-in-submit-div">
                     <input type="submit" value="Submit">
+                    <input type="submit" value="create account">
                 </div>
-            </div>
-        </form>
+            </form>
+            <!-- aside -->
+            <aside class="sign-in-aside">
+                <h3>WHY JOIN GAME HUB?</h3>
+                <ul>
+                    <li>Buy and download full retail games</li>
+                    <li>Join the Game Hub Community</li>
+                    <li>Buy and sell games</li>
+                    <li>Recieve automatic game updates,<br> special offers and more!</li>
+                </ul>
+            </aside>
+        </section>
     </main>
-
     <!-- footer -->
-
     <footer>
         <div class="container">
             <div class="contact-us">
@@ -82,7 +75,7 @@
                     <p><span>Contact us</span></p>
                     <p>Email: <a href="mailto:gamehub@contact.com">gamehub@contact.com</a></p>
                         <p>Phone: 836 59 442</p>
-                        <p><a href="#" class="contact-page-link">Contact Page</a></p>
+                        <p><a href="contact.html" class="contact-page-link">Contact Page</a></p>
                 </div>
             </div>
             <div class="social-media">
@@ -99,7 +92,6 @@
             </div>
         </div>
     </footer>
-
 </body>
 
 </html>
