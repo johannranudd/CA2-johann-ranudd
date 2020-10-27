@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- inconify -->
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <title>Create Account - Game Hub</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="logo">
+            <a href="index.html"><img src="img/GameHub_Logo.png" alt="Game Hub Logo"></a>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+            <a href="#"><i class="fas fa-search"></i></a>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="sell.html"><i class="fas fa-shopping-bag"></i>Buy & Sell</a></li>
+                <li><a href="games.html"><i class="fas fa-gamepad"></i>Games</a></li>
+                <li><a href="#" class="active"><i class="fas fa-user-circle"></i>Account</a></li>
+                <li><a href="checkout.html"><i class="fas fa-shopping-cart"></i>Checkout</a></li>
+            </ul>
+            <div id="hamburger">
+                <a href="#"><i class="fas fa-bars"></i></a>
+            </div>
+        </div>
+    </header>
+    <!-- main -->
+    <main>
+        <section class="sign-in-container">
+            <!-- form -->
+            <form action="/account.html" class="sign-in-form">
+                <h1>CREATE ACCOUNT</h1>
+                <label for="username">Email address</label>
+                <input type="text" id="username" name="username" value="" placeholder="Email address">
+                <!--! spesiffic to create account bellow-->
+                <label for="username">Confirm Email address</label>
+                <input type="text" id="username" name="username" value="" placeholder="Email address">
+                <!-- spesiffic to create account stops here -->
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" value="" placeholder="Password">
+                <!-- spesiffic to create account starts again -->
+                <label for="country-of-residence">Country of residence</label>
+                <select name="country-of-residence" id="country-of-residence">
+                    <option value="Afganistan">Afganistan</option>
+                    <option value="Belgum">Belgum</option>
+                    <option value="Colombia">Colombia</option>
+                    <option value="Denmark">Denmark</option>
+                    <option value="Estonia">Estonia</option>
+                    <option value="Finland">Finland</option>
+                    <option value="Germany">Germany</option>
+                    <option value="Hungary">Hungary</option>
+                    <option value="Iceland">Iceland</option>
+                    <option value="Norway">Norway</option>
+                    <option value="And the list goes on">And the list goes on</option>
+                </select>
+                <!-- spesiffic to create account stops here -->
+                <div id="checkbox-div-create-account">
+                    <div>
+                        <input type="checkbox" id="checkbox" name="remember-me" value="">
+                        <label for="remember-me" id="checkbox-label-create-account">&nbsp; I'm not a robot</label>
+                    </div>
+                    <input type="submit" value="Submit" id="submit-to-create-account">
+                </div>
+            </form>
+            <!-- aside -->
+            <aside class="sign-in-aside">
+                <h3>WHY JOIN GAME HUB?</h3>
+                <ul>
+                    <li>Buy and download full retail games</li>
+                    <li>Join the Game Hub Community</li>
+                    <li>Buy and sell games</li>
+                    <li>Recieve automatic game updates,<br> special offers and more!</li>
+                </ul>
+            </aside>
+        </section>
+        <aside class="already-a-member">
+            <p>Already a member? <a href="/sign-in.html"> Sign In</a></p>
+        </aside>
+    </main>
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="contact-us">
+                <div class="footer-contact-info">
+                    <p><span>Contact us</span></p>
+                    <p>Email: <a href="mailto:gamehub@contact.com">gamehub@contact.com</a></p>
+                    <p>Phone: 836 59 442</p>
+                    <p><a href="contact.html" class="contact-page-link">Contact Page</a></p>
+                </div>
+            </div>
+            <div class="social-media">
+                <p><span>Check us out on</span></p>
+                <a href=""><i class="fab fa-facebook"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="news-letter">
+                <p><span>Subscribe for newsletter and offers</span></p>
+                <form action="mailto:gamehub@contact.com"></form>
+                <input type="text" placeholder="Your Email.." name="email">
+                <input type="submit" value="Submit">
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

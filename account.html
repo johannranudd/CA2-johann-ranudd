@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- inconify -->
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <title>Account - Game Hub</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="logo">
+            <a href="index.html"><img src="img/GameHub_Logo.png" alt="Game Hub Logo"></a>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+            <a href="#"><i class="fas fa-search"></i></a>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="sell.html"><i class="fas fa-shopping-bag"></i>Buy & Sell</a></li>
+                <li><a href="games.html"><i class="fas fa-gamepad"></i>Games</a></li>
+                <li><a href="#" class="active"><i class="fas fa-user-circle"></i>Account</a></li>
+                <li><a href="checkout.html"><i class="fas fa-shopping-cart"></i>Checkout</a></li>
+            </ul>
+            <div id="hamburger">
+                <a href="#"><i class="fas fa-bars"></i></a>
+            </div>
+        </div>
+    </header>
+    <!-- main -->
+    <main class="account-main">
+        <aside class="account-options">
+            <ul>
+                <li><a href="#"><i class="fas fa-user"></i>Profile</a></li>
+                <li><a href="#"><i class="fas fa-book"></i>Library</a></li>
+                <li><a href="#"><i class="fas fa-shopping-bag"></i>Store</a></li>
+                <li><a href="#"><i class="fas fa-heartbeat"></i>Activity</a></li>
+            </ul>
+            <ul>
+                
+                <li><a href="#"><i class="fas fa-users"></i>Community</a></li>
+                <li><a href="#"><i class="far fa-comments"></i>Chat</a></li>
+                <li><a href="#"><i class="fas fa-heart"></i>Favorites</a></li>
+                <li><a href="#"><i class="fas fa-coins"></i>Buy and Sell</a></li>
+            </ul>
+        </aside>
+        <section class="main-section-account">
+            <!-- account banner -->
+            <div class="account-banner">
+                <img src="./img/account-image.png" alt="account image" id="account-image">
+                <div class="account-info">
+                    <div class="account-info-first-line">
+                        <h3>Account name</h3>
+                        <button><i class="fas fa-angle-down"></i></button>
+                    </div>
+                    <div class="account-info-second-line">
+                        <p>Bergen, Norway</p>
+                        <img src="./img/flag.png" alt="Flag of nationality">
+                    </div>
+                    <div class="account-info-third-line">
+                        <p>Additional information here</p>
+                    </div>
+                </div>
+                <form action="edit-profile" class="edit-profile">
+                    <label for="edit-profile">Points earned</label>
+                    <div>Feature your achievements and badges here</div>
+                    <button type="button">Edit profile</button>
+                </form>
+            </div>
+
+
+            <!-- activity -->
+            <div class="activity-headline">
+                <h3>Recent Activity</h3>
+            </div>
+
+            <div class="activity-log">
+                <div class="log-item">
+                    <p><span>Purchases</span></p>
+                    <p>-</p>
+                    <p>You purchased Cyber Punk from - <span>User Name</span></p>
+                    <button class="history-btn">View Purchase History</button>
+                </div>
+                <div class="log-item">
+                    <p><span>Sales</span></p>
+                    <p>-</p>
+                    <p> You sold Assassins creed unity to - <span>User Name</span></p>
+                    <button class="history-btn">View Sales History</button>
+                </div>
+                <div class="log-item purchases">
+                    <p><span>Up for sale</span></p>
+                    <p>-</p>
+                    <p>You have 2 items up for sale</p>
+                    <button class="history-btn">View Items</button>
+                </div>
+                <div class="log-item purchases">
+                    <p><span>Favorites</span></p>
+                    <p>-</p>
+                    <p>You have 6 items added to your favorites</p>
+                    <button class="history-btn">View Favorites</button>
+                </div>
+        
+            </div>
+        </section>
+    </main>
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="contact-us">
+                <div class="footer-contact-info">
+                    <p><span>Contact us</span></p>
+                    <p>Email: <a href="mailto:gamehub@contact.com">gamehub@contact.com</a></p>
+                        <p>Phone: 836 59 442</p>
+                        <p><a href="contact.html" class="contact-page-link">Contact Page</a></p>
+                </div>
+            </div>
+            <div class="social-media">
+                <p><span>Check us out on</span></p>
+                <a href=""><i class="fab fa-facebook"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="news-letter">
+                <p><span>Subscribe for newsletter and offers</span></p>
+                <form action="mailto:gamehub@contact.com"></form>
+                <input type="text" placeholder="Your Email.." name="email">
+                <input type="submit" value="Submit">
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
