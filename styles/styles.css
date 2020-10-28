@@ -1172,3 +1172,244 @@ input[type="password"] {
         margin: 20px 0;
     }
 }
+
+/* !checkout page */
+
+.checkout-main {
+    padding: 50px 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+.checkout-main h3 {
+    color: var(--yellow);
+    font-size: 1.6rem;
+}
+.checkout-main h1 {
+    color: var(--yellow);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-right: 30px;
+    font-size: 2rem;
+}
+.checkout-main span {
+    font-size: 1.45rem;
+}
+
+.checkout-left input{
+    height: 30px;
+}
+
+.checkout-left label {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+
+/* form */
+
+.checkout-form {
+    text-align: right;
+}
+
+.checkout-form input{
+    margin: 15px;
+}
+
+.country-of-residence-checkout {
+    margin-right: 5px;
+    width: 166px;
+}
+
+/* select payment */
+
+.select-payment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+}
+.select-payment div {
+    display: flex;
+    align-items: center;
+}
+.select-payment input {
+    margin: 10px 10px;
+}
+.select-payment p {
+    color: #fff;
+    font-size: 1.4rem;
+}
+/* credit card details */
+.credit-card-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 15px;
+}
+.card-number-class input {
+    width: 280px;
+}
+.card-number-class {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+.card-number-class label {
+    margin: 10px 0;
+}
+/* boxes */
+.boxes {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 250px;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box input {
+    width: 80px;
+}
+.box label {
+    font-size: 1rem;
+}
+/* select delivery method */
+
+.delivery-method {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.delivery-method div {
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+}
+.delivery-method div label {
+    margin: 0 10px;
+}
+
+/* button */
+
+.continue-to-payment {
+    display: flex;
+    justify-content: center;
+}
+
+.continue-to-payment button {
+    background: var(--red);
+    border: 1px solid var(--yellow);
+}
+.continue-to-payment a {
+    color: var(--yellow);
+    padding: 20px;
+}
+
+/* checkout right */
+
+.checkout-right {
+    margin-top: 35px;
+}
+
+.checkout-right div {
+    padding: 15px 0px;
+}
+
+/* aef */
+.checkout-right p {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.checkout-right span {
+    font-size: 1.5rem;
+}
+
+.summary-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.in-your-cart div{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* in cart firgure */
+
+.in-cart-figure figcaption{
+    padding: 20px 10px;
+    background: #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.in-cart-figure button {
+    background: transparent;
+    border: none;
+    margin-top: 15px;
+}
+
+.in-cart-figure a {
+    color: blue;
+    text-decoration: underline;
+}
+
+@media (max-width: 800px){
+    .checkout-main {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .checkout-right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .summary h3{
+        text-align: center;
+    }
+    .summary p, .in-cart-figure p{
+        margin: 0 40px;
+        white-space: nowrap;
+    }
+    .in-your-cart h3{
+        text-align: center;
+    }
+    .in-your-cart p{
+        margin: 0 40px;
+    }
+    .in-cart-figure img {
+        min-width: 160px;
+    }
+    /* checkout left */
+    .checkout-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .checkout-left h1 {
+        text-align: center;
+        margin: 40px 0 10px 0;
+        white-space: nowrap;
+    }
+    .checkout-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .country-of-residence-checkout {
+        margin: 0;
+    }
+    .delivery-method label {
+        white-space: nowrap;
+    }
+    .continue-to-payment {
+        white-space: nowrap;
+    }
+}
