@@ -18,11 +18,7 @@ body {
     height: 100%;
 }
 
-h1 {
-    font-family: "Copperplate Gothic Light", fantasy;
-    font-weight: 400;
-}
-h3 {
+h1, h2, h3 {
     font-family: "Copperplate Gothic Light", fantasy;
     font-weight: 400;
 }
@@ -959,6 +955,9 @@ input[type="password"] {
 .edit-profile {
     grid-column: 4;
 }
+.edit-profile h3 {
+    color: var(--yellow);
+}
 /* account image */
 .account-banner img {
     width: 60%;
@@ -1303,10 +1302,9 @@ input[type="password"] {
 .continue-to-payment button {
     background: var(--red);
     border: 1px solid var(--yellow);
-}
-.continue-to-payment a {
     color: var(--yellow);
     padding: 20px;
+    cursor: pointer;
 }
 
 /* checkout right */
@@ -1354,11 +1352,9 @@ input[type="password"] {
     background: transparent;
     border: none;
     margin-top: 15px;
-}
-
-.in-cart-figure a {
     color: blue;
     text-decoration: underline;
+    cursor: pointer;
 }
 
 @media (max-width: 800px){
