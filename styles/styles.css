@@ -1330,14 +1330,14 @@ input[type="password"] {
     justify-content: center;
 }
 
-.continue-to-payment a {
+.continue-to-payment input {
     background: var(--red);
     border: 1px solid var(--yellow);
     color: var(--yellow);
-    padding: 30px;
     cursor: pointer;
-    font-size: 1.4rem;
-    text-align: center;
+    font-size: 1.7rem;
+    height: 65px;
+    width: 170px;
 }
 
 /* checkout right */
